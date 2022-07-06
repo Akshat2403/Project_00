@@ -200,6 +200,7 @@ main form{
 .content{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    margin-bottom: 50px;
 }
 .card{
     margin: auto;
@@ -346,4 +347,12 @@ h2{
         }
         
 
+}
+@media only screen and (max-width: 400px){
+    aside{
+        width: 42px;
+    }
+    main{
+        margin-left: 42px;
+    }
 }
