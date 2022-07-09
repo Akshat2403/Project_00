@@ -52,10 +52,10 @@ function out(getTodo){
 }
 out(getTodo);
 
-document.querySelectorAll('.searchbox')[0].addEventListener("keypress",e=>{
+document.querySelectorAll('.searchbox').forEach(search=>search.addEventListener("keypress",e=>{
     if(e.key=== "Enter"){
         e.preventDefault();
-        var value=document.getElementById('search-box1').value;
+        var value=search.value;
         if(value==null || value==""){
             alert("Please Enter A value")
         }else{
@@ -66,7 +66,7 @@ document.querySelectorAll('.searchbox')[0].addEventListener("keypress",e=>{
         return data;
         };
         out(getTodo)
-        }}})
+        }}}))
         
         
 
